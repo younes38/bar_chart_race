@@ -5,6 +5,16 @@ import 'dart:math' as math;
 import 'models/rectangle.dart';
 import 'paint/my_state_paint.dart';
 
+/// Creates an interactive bar chart depending on the provided [data], which looks like a race
+///
+/// [data] should be a matrix of double with at least two columns and two rows, and stores data in cumulative way
+/// [initialPlayState] if true then the bar chart will be animated, else it will show the first row of data and stop
+/// [framesPerSecond] defines the number of frame to show per seconds
+/// [columnsLabel] represent the name of the columns
+/// [statesLabel] represent the name of the rows (usually time)
+/// [numberOfRactanglesToShow] the first columns to show
+/// [title] title of the bar chart race
+/// [columnsColor] the color of each column
 class BarChartRace extends StatefulWidget {
   /// each row represents a state and each column represents one instance
   /// data should contains at least two rows and two columns, else it's not logic
@@ -18,14 +28,14 @@ class BarChartRace extends StatefulWidget {
   final int framesBetweenTwoStates;
 
   /// a list of labels for each column.
-  /// length of the this list show be equals to the number of columns of [data]
+  /// length of the this list show be equals to the number of columns of [data].
   ///
   /// for examle if you are going to study countries provides the list of countries with the same order as the columns in data.
   final List<String> columnsLabel;
 
   /// one label for each state.
   /// if your state is the time you need to prodive the time of each state
-  /// length of [stateLabels] list should be equal to the number of rows in [data]
+  /// length of [stateLabels] list should be equal to the number of rows in [data].
   final List<String> statesLabel;
 
   /// number of rectangles to show in the UI.
