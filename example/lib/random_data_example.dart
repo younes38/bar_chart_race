@@ -12,7 +12,7 @@ class _RandomDataExampleState extends State<RandomDataExample> {
   bool isPlaying = false;
   @override
   void initState() {
-    data = generateGoodRandomData(30, 5);
+    data = generateGoodRandomData(20, 5);
     super.initState();
   }
 
@@ -40,6 +40,7 @@ class _RandomDataExampleState extends State<RandomDataExample> {
               Color(0xFF212326),
             ],
             framesPerSecond: 60,
+            framesBetweenTwoStates: 30,
             numberOfRactanglesToShow: 4,
             title: "Top companies revenue",
             columnsLabel: ["Amazon", "Google", "Apple", "Coca", "Huawei"],
@@ -60,13 +61,14 @@ class _RandomDataExampleState extends State<RandomDataExample> {
   List<List<double>> generateGoodRandomData(int nbRows, int nbColumns) {
     List<List<double>> data = List.generate(nbRows, (index) => List());
     for (int j = 0; j < nbColumns; j++) {
-      data[0].add(j * 40.0);
+      data[0].add(j * 10.0);
     }
     for (int i = 1; i < nbRows; i++) {
       for (int j = 0; j < nbColumns; j++) {
         data[i].add(data[i - 1][j] +
             (nbColumns - j) +
-            math.Random().nextDouble() * 100);
+            math.Random().nextDouble() * 20 +
+            (j == 2 ? 10 : 0));
       }
     }
     return data;

@@ -38,7 +38,7 @@ class MyStatePaint extends CustomPainter {
     linePaint.strokeWidth = 2;
     linePaint.strokeCap = StrokeCap.round;
 
-    maxLength = totalWidth * 0.95;
+    maxLength = totalWidth * 0.9;
   }
 
   final double spaceBetweenTwoRectangles = 6;
