@@ -1,6 +1,6 @@
 name: bar_chart_race
 description: A library to draw fantastic bar charts race in Flutter.
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/younes38/bar_chart_race
 
 environment:
