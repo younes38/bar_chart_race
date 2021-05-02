@@ -10,7 +10,7 @@ add the dependencies to your app:
 
 ```yaml
 dependencies:
-  bar_chart_race: 0.0.1
+  bar_chart_race: ^0.0.1
 ```
 then import it:  
 ```import 'package:bar_chart_race/bar_chart_race.dart';```
