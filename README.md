@@ -6,12 +6,13 @@
 ## Usage 
 
 ### Let's get started  
-add the dependencies to your app and import it  
+add the dependencies to your app:
 
 ```yaml
 dependencies:
   bar_chart_race:
 ```
+then import it:  
 ```import 'package:bar_chart_race/bar_chart_race.dart';```
 
 then you can simply use: 
@@ -33,7 +34,7 @@ the  ``` data ``` and ``` initialPlayState ``` are required and here the exmplan
 * ``` title ```: The title of the bar chart race
 * ``` columnsColor ```: the color of each rectangle
 
-## And the last but not least
+## Last but not least
 pull requests are welcome!
 the package is still in its first version so it may contains some issues.
 
