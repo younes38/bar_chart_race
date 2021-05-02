@@ -9,10 +9,10 @@ import 'paint/my_state_paint.dart';
 ///
 /// [data] should be a matrix of double with at least two columns and two rows, and stores data in cumulative way
 /// [initialPlayState] if true then the bar chart will be animated, else it will show the first row of data and stop
-/// [framesPerSecond] defines the number of frame to show per seconds
-/// [columnsLabel] represent the name of the columns
-/// [statesLabel] represent the name of the rows (usually time)
-/// [numberOfRactanglesToShow] the first columns to show
+/// [framesPerSecond] defines the number of frames to show per seconds
+/// [columnsLabel] represents the name of the columns
+/// [statesLabel] represents the name of the rows (usually time)
+/// [numberOfRactanglesToShow] represents the number of the first columns to show
 /// [title] title of the bar chart race
 /// [columnsColor] the color of each column
 class BarChartRace extends StatefulWidget {
@@ -20,6 +20,9 @@ class BarChartRace extends StatefulWidget {
   /// data should contains at least two rows and two columns, else it's not logic
   /// data should be cumulative
   final List<List<double>> data;
+
+  /// if it's true then the bar chart will be animated
+  final bool initialPlayState;
 
   /// number of frame to show in one second
   final double framesPerSecond;
@@ -60,8 +63,6 @@ class BarChartRace extends StatefulWidget {
   /// the height of the rectangle
   final double rectangleHeight;
 
-  /// if it's true then the bar chart will be animated
-  final bool initialPlayState;
   const BarChartRace({
     Key key,
     @required this.data,

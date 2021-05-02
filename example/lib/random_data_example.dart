@@ -20,14 +20,14 @@ class _RandomDataExampleState extends State<RandomDataExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bar chart race test"),
+        title: Text("Bar chart race"),
         backgroundColor: Colors.brown,
         elevation: 0,
       ),
       body: Column(
         children: [
           SizedBox(
-            height: 50,
+            height: 150,
           ),
           BarChartRace(
             data: data,
