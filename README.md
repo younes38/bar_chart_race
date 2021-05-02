@@ -1,7 +1,7 @@
 # bar_chart_race
 
- A library to draw fantastic bar charts race in Flutter
-
+ A library to draw fantastic bar charts race in Flutter  
+<img src="https://github.com/younes38/bar_chart_race/blob/main/bar_chart_race.gif" width="220" height="400" />
 
 ## Usage 
 
@@ -10,7 +10,7 @@ add the dependencies to your app:
 
 ```yaml
 dependencies:
-  bar_chart_race:
+  bar_chart_race: 0.0.1
 ```
 then import it:  
 ```import 'package:bar_chart_race/bar_chart_race.dart';```
@@ -34,7 +34,8 @@ the  ``` data ``` and ``` initialPlayState ``` are required and here the exmplan
 * ``` title ```: The title of the bar chart race
 * ``` columnsColor ```: the color of each rectangle
 
-## Last but not least
+## Contribution
 pull requests are welcome!
-the package is still in its first version so it may contains some issues.
 
+## Last but not least
+the package is still in its first version so it may contains some issues.
