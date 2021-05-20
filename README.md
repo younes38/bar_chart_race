@@ -1,6 +1,6 @@
 # bar_chart_race
 
-A library to draw fantastic bar charts race in Flutter  
+The first library to draw fantastic bar charts race in Flutter  
 <img src="https://github.com/younes38/bar_chart_race/blob/main/bar_chart_race.gif" width="220" height="400" />
 
 ## Usage
